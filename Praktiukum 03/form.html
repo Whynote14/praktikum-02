@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pemesanan barang</title>
+</head>
+<style>
+    
+    .topnav {
+        background-color: #d42e81;
+        overflow: hidden;
+        height:60px ;
+    }
+    
+    .topnav a {
+        color: #1d2238;
+        text-align: right;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    .topnav a:hover {
+        background-color:#d42e81;
+        color: black;
+    }
+    .topnav b{
+        float : right;
+    }
+    input[type=text] {
+        width: 100%;
+        margin: 8px 0 ;
+        box-sizing: border-box;
+    }
+    select{
+        width: 100%;
+    }
+    .tombol{
+        background-color:#d42e81
+    }
+    .tombol:hover{
+        background-color:#d42e81
+    }
+
+</style>
+<div class="topnav">
+    <a href="#">Home |</a>
+    <a href="#">Generate Link |</a>
+    <a href="#">Transaction History |</a>    
+    <a href="#">Policy |</a>
+    <a href="#"><b>Logout</a>
+</div>
+<body>
+    <h1 style="margin-left: 90px;">iphone 15 </h1>
+        <div style="display: flex;">
+            <div>
+                <img style="margin-top: 0px; margin-left: 50px; margin-right: 60px;" src="ip.png" alt="iphone 15" width="400px" height="400px">
+                <button style="margin-left: 100px; display: flex;">
+            
+                </button>
+            </div>
+
+            <table>
+                <tr>
+    
+                    <td>Title Here</td>
+                    <td><input type="text" name="title" placeholder="iphone 15"></td>
+                </tr> 
+                <br>
+                <tr>
+                    <td>Description</td>
+                    <td><textarea rows="6" cols="70" type="text" name="desc"></textarea></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Account number</td>
+                    <td><input type="text" name="number"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Bank</td>
+                    <td><select>
+                    <option>BNI</option>
+                    <option>BCA</option>
+                    <option>Mandiri</option>
+                    </select>
+                    </td>
+                    <br>
+                    <tr>
+                        <td>Account Holder</td>
+                        <td><input type="text" name="holder"></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>Transaction</td>
+                        <td><select name="3">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option></select>
+                        </td>
+                        <tr>
+                            <td></td>
+                            <td><small>* if the transaction is for 3 person, choose 3 from the dropdown list </small></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input style="color: rgb(241, 28, 145);" type="checkbox" name="mobile" value="mobile"><span style="color:#d42e81;">Send to Mobile phone</span></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input style="color: rgb(240, 28, 152);" type="checkbox" name="email" value="email"><span style="color:#d42e81;">Send to email</span></td>
+                        </tr>
+                        <tr>
+                            <td>Send to mobile phone</td>
+                            <td><input type="number" name="phone"></td>
+                        </tr>
+                        <tr>
+                            <td>Send to email</td>
+                            <td><input type="email" name="mail"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p><input class="tombol"  type="submit" value="Generate Link"></p>
+                            </td>
+                        </tr>
+            </table>
+        </div>
+
+    
+
+
+
+    
+    
+    
+    
+    
+</body>
+</html>
