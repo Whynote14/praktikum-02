@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css box</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .row2, .row3{
+        display: flex;
+        gap: 10px;
+    }
+
+    .row2-yelow{
+        background-color: yellow;
+        height: 100px;
+        flex-grow: 1;
+    }
+
+    .row2-red{
+        background-color: red;
+        height: 100px;
+        width: 800px;
+        flex-grow: 1;
+    }
+
+
+    .box1{
+        display: flex;
+        gap: 10px;
+    }
+
+    .box1-green{
+        background-color:green ;
+        height: 400px;
+        margin-left: 10px;
+        flex-grow: 1;
+    }
+
+    .box1-green{
+        background-color:darkcyan;
+        height: 400px;
+        margin-left: 10px;
+        flex-grow: 1;
+    }
+
+    .box1-blue{
+        background-color:darkgrey;
+        height: 400px;
+        margin-left: 10px;
+        width: 600px;
+        flex-grow: 1;
+    }
+
+    .box1-pink{
+        background-color: skyblue ;
+        height: 400px;
+        margin-left: 10px;
+        flex-grow: 1;
+    }
+
+    .row3-brown{
+        background-color:blue;
+        height: 100px;
+        flex-grow: 1;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row2">
+            <div class="row2-yelow">kotak yelow</div>
+            <div class="row2-red">kotak red</div>
+        </div>   
+
+        <div class="box1">
+            <div class="box1-green">box1</div>
+            <div class="box1-blue">box2</div>
+            <div class="box1-pink">box3</div>
+        </div>
+
+        <div class="row3">
+            <div class="row3-brown">kotak brown</div>
+        </div>
+
+    </div>
+
+   
+
+</body>
+</html>
