@@ -1,0 +1,79 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>flexboxx</title>
+    </head>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 670px;
+            flex-wrap: wrap;
+            width: 300px;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+        }
+
+        nav {
+            background-color: palevioletred;
+            width: 150px;
+            height: 700px;
+
+        }
+
+        header {
+            background-color: aqua;
+            width: 160vh;
+            height: 100px;
+            flex: 3;
+        }
+
+        article {
+            background-color: aquamarine;
+            width: 130vh;
+            height: 300px;
+        }
+
+        aside {
+            background-color: powderblue;
+            width: 30vh;
+
+        }
+
+        footer {
+            background-color: bisque;
+            height: 100px;
+            flex: 3;
+        }
+    </style>
+
+    <body>
+        <div class="container">
+            <nav>nav</nav>
+            <header>header</header>
+            <main>
+                <article>article</article>
+                <aside>aside</aside>
+
+            </main>
+            <footer>footer</footer>
+
+
+
+
+
+        </div>
+
+    </body>
+</html>
