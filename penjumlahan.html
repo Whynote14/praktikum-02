@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Jumlah Dua Bilangan</title>
+</head>
+<body>
+    <h1>Menghitung Jumlah Dua Bilangan</h1>
+    <label for="bilangan1">Bilangan Pertama :</label>
+    <br>
+    <input type="number" name="bil1" id="bil1" onchange="hitungjumlah()">
+    <br>
+    +
+    <br>
+    <label for="bilangan2">Bilangan Kedua :</label>
+    <br>
+    <input type="number" name="bil2" id="bil2" onchange="hitungjumlah()">
+    <br>
+    =
+    <br>
+    <label for="hasil">Hasil</label>
+    <br>
+    <input type="text" name="hasil" id="hasil" readonly>
+    <script>
+        function hitungjumlah() {
+            // Ambil nilai dari input dan konversi ke tipe data number
+            let bilangan1 = parseFloat(document.getElementById("bil1").value) || 0;
+            let bilangan2 = parseFloat(document.getElementById("bil2").value) || 0;
+
+            // Hitung jumlahnya
+            let jumlah = bilangan1 + bilangan2;
+      
+            // Tampilkan hasil pada input dengan id 'hasil'
+            document.getElementById("hasil").value = jumlah;
+        }
+    </script>
+</body>
+</html>
