@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validasi</title>
+    <style>
+        .error { color: red; }
+    </style>
+</head>
+<body style="background-color: hotpink; position: relative;">
+    <table border="4" class="position-absolute top-0 start-0">
+      <form id="bookingForm" style="display: block;">
+            <label for="namaPelanggan">Nama Pelanggan:</label><br>
+            <input type="text" id="namaPelanggan" name="namaPelanggan"><span class="error"></span><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><span class="error"></span><br>
+
+            <label for="jamKeberangkatan">Jam Keberangkatan:</label><br>
+            <input type="text" id="jamKeberangkatan" name="jamKeberangkatan"><span class="error"></span><br>
+
+            <label for="tujuanKeberangkatan">Tujuan Keberangkatan:</label><br>
+            <input type="text" id="tujuanKeberangkatan" name="tujuanKeberangkatan"><span class="error"></span><br>
+
+            <label for="jumlahTiket">Jumlah Tiket:</label><br>
+            <input type="number" id="jumlahTiket" name="jumlahTiket" min="1" max="10"><span class="error"></span><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </table>
+
+    <div id="result"></div>
+
+    <script src="form-validation.js"></script>
+</body>
+</html>
